@@ -1,0 +1,35 @@
+name: SkyZero
+version: ${project.version}
+main: ppeerapon.mc.skyzero.SkyZero
+api-version: 1.16
+authors: [ Ppeerapon ]
+description: A Minecraft Plugin.
+commands:
+  Fly:
+    usage: /<command>
+    description: I belive I can fly.
+  Hologram:
+    usage: /<command> <text>
+    description: Hologram is here.
+  Kick:
+    usage: /<command> <player>
+    description: Kick some player.
+  Path:
+    usage: /<command>
+    description: Make a path for you.
+  Message:
+    usage: /<command>
+    aliases: [reply, msg]
+    description: Private message.
+  Menu:
+    usage: /<command>
+    description: Open GUI.
+  Skull:
+    usage: /<commmand>
+    description: Get a skull.
+  Banner:
+    usage: /<commmand>
+    description: Create a banner.
+  Map:
+    usage: /<commmand> <url>
+    description: Set map image.
