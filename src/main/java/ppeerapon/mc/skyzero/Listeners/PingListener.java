@@ -1,4 +1,4 @@
-package ppeerapon.mc.skyzero.Events;
+package ppeerapon.mc.skyzero.Listeners;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -8,7 +8,7 @@ import org.bukkit.event.server.ServerListPingEvent;
 
 import java.io.File;
 
-public class PingEvent implements Listener {
+public class PingListener implements Listener {
 
     @EventHandler
     private void onServerPing(ServerListPingEvent e) {
@@ -17,7 +17,7 @@ public class PingEvent implements Listener {
         try {
             e.setServerIcon(Bukkit.loadServerIcon(new File("icon.png")));
         } catch (Exception exception) {
-            exception.printStackTrace();
+            System.out.println("Can't get icon.png");
         }
     }
 

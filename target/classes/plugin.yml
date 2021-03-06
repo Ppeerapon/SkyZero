@@ -1,5 +1,5 @@
 name: SkyZero
-version: ${project.version}
+version: 1.0-SNAPSHOT
 main: ppeerapon.mc.skyzero.SkyZero
 api-version: 1.16
 authors: [ Ppeerapon ]

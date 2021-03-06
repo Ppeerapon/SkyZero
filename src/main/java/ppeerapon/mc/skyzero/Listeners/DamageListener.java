@@ -1,4 +1,4 @@
-package ppeerapon.mc.skyzero.Events;
+package ppeerapon.mc.skyzero.Listeners;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -13,7 +13,7 @@ import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.plugin.Plugin;
 import ppeerapon.mc.skyzero.SkyZero;
 
-public class DamageEvent implements Listener {
+public class DamageListener implements Listener {
 
     Plugin pLugin = SkyZero.getPlugin(SkyZero.class);
 
@@ -45,5 +45,4 @@ public class DamageEvent implements Listener {
             }
         },20);
     }
-
 }

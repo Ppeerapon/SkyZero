@@ -1,4 +1,4 @@
-package ppeerapon.mc.skyzero.Events;
+package ppeerapon.mc.skyzero.Listeners;
 
 import org.bukkit.Bukkit;
 import org.bukkit.DyeColor;
@@ -11,7 +11,7 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractAtEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 
-public class InteractEvent implements Listener {
+public class InteractListener implements Listener {
 
     @EventHandler
     private void onRightClickAtEntity(PlayerInteractAtEntityEvent e) {

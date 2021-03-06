@@ -1,4 +1,4 @@
-package ppeerapon.mc.skyzero.Events;
+package ppeerapon.mc.skyzero.Listeners;
 
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -6,7 +6,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerResourcePackStatusEvent;
 
-public class ResourcePackStatusEvent implements Listener {
+public class ResourcePackStatusListener implements Listener {
 
     @EventHandler
     private void packStatus (PlayerResourcePackStatusEvent e) {

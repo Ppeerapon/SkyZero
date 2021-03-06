@@ -21,11 +21,14 @@ public class ScoreBoard {
         mobCount.setSuffix("");
         obj.getScore(ChatColor.GREEN.toString()).setScore(5);
 
+        Team rank = scoreboard.registerNewTeam("rank");
+        rank.addEntry(ChatColor.AQUA.toString());
+        rank.setPrefix("Rank : ");
+        rank.setSuffix("");
+        obj.getScore(ChatColor.AQUA.toString()).setScore(3);
+
         Score blank2 = obj.getScore(" ");
         blank2.setScore(4);
-
-        Score rank = obj.getScore("Rank: " + ChatColor.GRAY + "Default");
-        rank.setScore(3);
 
         Score blank = obj.getScore("");
         blank.setScore(2);

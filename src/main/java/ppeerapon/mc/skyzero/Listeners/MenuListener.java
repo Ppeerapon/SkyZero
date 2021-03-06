@@ -1,4 +1,4 @@
-package ppeerapon.mc.skyzero.Events;
+package ppeerapon.mc.skyzero.Listeners;
 
 import org.bukkit.Effect;
 import org.bukkit.Sound;
@@ -12,7 +12,7 @@ import ppeerapon.mc.skyzero.Commands.Path;
 
 import java.util.Objects;
 
-public class MenuEvent implements Listener {
+public class MenuListener implements Listener {
 
     @EventHandler
     private void onInventoryClick(InventoryClickEvent e) {

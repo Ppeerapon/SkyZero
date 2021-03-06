@@ -1,4 +1,4 @@
-package ppeerapon.mc.skyzero.Events;
+package ppeerapon.mc.skyzero.Listeners;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
@@ -11,11 +11,12 @@ import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.plugin.Plugin;
 import ppeerapon.mc.skyzero.Commands.Path;
 import ppeerapon.mc.skyzero.SkyZero;
+import ppeerapon.mc.skyzero.Utils.Cuboid;
 
 import java.util.ArrayList;
 import java.util.UUID;
 
-public class MoveEvent implements Listener {
+public class MoveListener implements Listener {
 
     Plugin plugin = SkyZero.getPlugin(SkyZero.class);
 
@@ -47,6 +48,14 @@ public class MoveEvent implements Listener {
                 }, 20);
             }
         }
+    }
+
+    Cuboid cuboid = new Cuboid(new Location(Bukkit.getWorld("world"), -236, 62, 27), new Location(Bukkit.getWorld("world"), -228, 66, 19));
+    @EventHandler
+    private void onPlayerMove(PlayerMoveEvent e) {
+        Player player = e.getPlayer();
+        player.setGlowing(cuboid.containsLocation(player.getLocation()));
+
     }
 
 }

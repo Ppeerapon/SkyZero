@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SkyZero">
+    <output-path>$PROJECT_DIR$/out/artifacts/SkyZero</output-path>
+    <root id="archive" name="SkyZero.jar">
+      <element id="module-output" name="SkyZero" />
+    </root>
+  </artifact>
+</component>

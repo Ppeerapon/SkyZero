@@ -1,4 +1,4 @@
-package ppeerapon.mc.skyzero.Events;
+package ppeerapon.mc.skyzero.Listeners;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
@@ -16,7 +16,7 @@ import org.spigotmc.event.entity.EntityDismountEvent;
 import ppeerapon.mc.skyzero.SkyZero;
 import ppeerapon.mc.skyzero.Utils.Chairs;
 
-public class SitEvent implements Listener {
+public class SitListener implements Listener {
 
     Plugin plugin = SkyZero.getPlugin(SkyZero.class);
 

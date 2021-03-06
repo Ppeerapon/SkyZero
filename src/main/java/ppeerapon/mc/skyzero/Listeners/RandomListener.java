@@ -1,4 +1,4 @@
-package ppeerapon.mc.skyzero.Events;
+package ppeerapon.mc.skyzero.Listeners;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -12,7 +12,7 @@ import org.bukkit.event.block.BlockBreakEvent;
 import java.util.HashMap;
 import java.util.UUID;
 
-public class RandomEvent implements Listener {
+public class RandomListener implements Listener {
 
     HashMap<UUID, Integer> cutTreeWarn = new HashMap<>();
 
