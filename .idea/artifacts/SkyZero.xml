@@ -3,6 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/SkyZero</output-path>
     <root id="archive" name="SkyZero.jar">
       <element id="module-output" name="SkyZero" />
+      <element id="library" level="project" name="spigot-1.17" />
     </root>
   </artifact>
 </component>

@@ -112,6 +112,7 @@ public final class SkyZero extends JavaPlugin {
         //this.getServer().getPluginManager().registerEvents(new GlowEnchantListener(), this);
         this.getServer().getPluginManager().registerEvents(new GUIListener(), this);
         this.getServer().getPluginManager().registerEvents(new RankListener(), this);
+        this.getServer().getPluginManager().registerEvents(new SneakListener(), this);
     }
 
     private void registerEnchantment(Enchantment enchantment) {
